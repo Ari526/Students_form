@@ -1,0 +1,33 @@
+<%= form_for @student  do |f| %>
+    <div>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+
+    <div>
+      <%= f.label :age %>
+      <%= f.number_field :age %>
+    </div>
+    
+    <div>
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+    </div>
+    
+    <div>
+      <%= f.label :phone_number %>
+      <%= f.text_field :phone_number %>
+    </div>
+    
+    <div>
+      <%= f.label :address %>
+      <%= f.text_area :address %>
+    </div>
+    
+    <div>
+      <%= f.submit %>
+      
+    </div>
+<%end%>
+
+

@@ -1,0 +1,26 @@
+<h1>Students Login form</h1>
+<table>
+   <thead>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Email</th>
+      <th>Phonenumber</th>
+      <th>Address</th>
+    </thead>
+    <% @students.each do |student| %>
+    <tr>
+      <td><%= student.name %></td> 
+      <td><%= student.age %></td> 
+      <td><%= student.email %></td> 
+      <td><%= student.phone_number%></td> 
+      <td><%= student.address %></td>  
+      <td>
+        <%= link_to "Create student", new_student_path %>
+    </tr>
+    <%end%>
+ 
+ 
+ 
+ 
+
+</table>
